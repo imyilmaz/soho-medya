@@ -3473,7 +3473,7 @@ body{font-family: 'Visbycf';}
 .hamburger .hamburger-bar:nth-child(1) {  width: 18px; margin-left: 5px; }
 .hamburger .hamburger-bar:nth-child(2) { }
 .hamburger .hamburger-bar:nth-child(3) { width: 18px; margin-left: 5px; }
-
+ 
 @media only screen and (min-width: 999px) { 
   .hamburger:hover .hamburger-bar:nth-child(1) { -webkit-transform: rotate(-5deg) translateY(1px) translateX(-1px); transform: rotate(-5deg) translateY(1px) translateX(-1px); }
   .hamburger:hover .hamburger-bar:nth-child(2) { opacity: .8; }
