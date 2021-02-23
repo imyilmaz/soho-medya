@@ -2133,7 +2133,7 @@ body{font-family: 'Visbycf';}
   .dropdown {
     overflow: visible;
   }
-}
+} 
 
 @media screen and (min-width: 1440px) {
   .about-paragraph.p-20 {
@@ -2376,36 +2376,42 @@ body{font-family: 'Visbycf';}
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .col.col-6.col-6-center.col-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    max-width: 100%;
   }
 
   .col.col-4.col-5 {
     -webkit-flex-basis: 41.666%;
     -ms-flex-preferred-size: 41.666%;
     flex-basis: 41.666%;
+    max-width: 41.666%;
   }
 
   .col.col-4.col-6 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
+    max-width: 50%;
   }
 
   .col.col-8.col-7 {
     -webkit-flex-basis: 58.333%;
     -ms-flex-preferred-size: 58.333%;
     flex-basis: 58.333%;
+    max-width:  58.333%;
   }
 
   .col.col-2.col-4 {
     -webkit-flex-basis: 33.333%;
     -ms-flex-preferred-size: 33.333%;
     flex-basis: 33.333%;
+    max-width: 33.333%;
   }
 
   .title-text {
@@ -2825,18 +2831,21 @@ body{font-family: 'Visbycf';}
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    max-width: 100%;
   }
 
   .col.col-4.col-5.col-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    max-width: 100%;
   }
 
   .col.col-8.col-7.col-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    max-width: 100%;
   }
 
   .title-text {
@@ -3163,6 +3172,7 @@ body{font-family: 'Visbycf';}
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
+    max-width: 50%;
   }
 
   .title-text {
@@ -3535,4 +3545,16 @@ body{font-family: 'Visbycf';}
 
 @media (max-width: 992px){
   .col.col-4{ max-width: 100%; }
+  .col.col-6.col-12 { max-width: 100%; flex:0 0 100%; }
+  .project-section-image { display: flex; justify-content: center; }
 }
+
+
+
+@media screen and (max-width: 1280px) {
+
+
+  .link-3 { font-size: 28px; }
+  .link-4 { font-size: 28px; }
+  .text-block-7 { font-size: 28px ;}
+} 
