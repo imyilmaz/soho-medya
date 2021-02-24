@@ -1486,8 +1486,8 @@ body{font-family: 'Visbycf';}
 
 .services-section-1 {
   position: relative;
-  padding-top: 350px;
-  padding-bottom: 100px;
+  padding-top: 300px;
+ 
 }
 
 .tabs-3 {
@@ -1801,6 +1801,7 @@ body{font-family: 'Visbycf';}
 
 .dropdown-toggle-menu{
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
@@ -1809,7 +1810,7 @@ body{font-family: 'Visbycf';}
 }
 .accordion{ }
 .accordion-item{
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .accordion-header{  padding:0 20px;  border-radius:30px 30px 0 0; background: #f7f8fa;}
 .dropdown-image{flex: 0 0 15%; max-width: 15%;}
@@ -1973,6 +1974,7 @@ body{font-family: 'Visbycf';}
 .services-section-2 {
   position: relative;
   font-family: Visbycf, sans-serif;
+  padding-bottom: 50px;
 }
 
 .phone-icon {
@@ -3175,9 +3177,10 @@ body{font-family: 'Visbycf';}
   }
 
   .button-main-3.white.size {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 5px 15px;
   }
-
+  .button-main-3.white.size span { font-size: 20px;}
   .image-9 {
     height: 30px;
   }
@@ -3191,6 +3194,11 @@ body{font-family: 'Visbycf';}
     align-self: center;
     font-size: 10px;
   }
+  .dropdown-toggle-menu{ justify-content: center;}
+  .dropdown-image{ flex: 0 0 100%; max-width: 100%; text-align: center; order: 2; padding-bottom: 20px;}
+  .dropdown-image img { height: 40px;}
+  .dropdown-text { flex: 0 0 100%; max-width: 100%; order: 1;}
+  .dropdown-link{ flex: 0 0 100%; max-width: 100%; text-align: center; order: 3; }
 
 }
 
@@ -3374,7 +3382,7 @@ body{font-family: 'Visbycf';}
 
   .services-section-1 {
     padding-top: 100px;
-    padding-bottom: 50px;
+   
   }
 
   .project-section-1 {
