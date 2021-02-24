@@ -115,6 +115,7 @@ body{font-family: 'Visbycf';}
 .body {
   background-color: #1c232f;
   line-height: 1;
+  font-family: Visbycf, sans-serif;
 }
 
 .row {
@@ -586,8 +587,10 @@ body{font-family: 'Visbycf';}
 }
 
 .slide {
+  max-width: 100%;
   width: 508px;
   margin: 10px;
+  margin-top: 25px;
   border: 1px solid #2a406a;
   border-radius: 30px;
 }
@@ -606,7 +609,7 @@ body{font-family: 'Visbycf';}
 }
 
 .slider {
-  overflow: hidden;
+ 
   width: 100%;
   height: 592px;
   padding-top: 25px;
@@ -769,7 +772,17 @@ body{font-family: 'Visbycf';}
 .slide-list.height-button {
   margin-bottom: 50px;
 }
+.slide-list.height-button-lg {
+  margin-bottom: 120px;
+}
 
+.slide-list.height-button-lg-1 {
+  padding-bottom: 48px;
+}
+
+.slide-list.height-button-lg-2 {
+  padding-bottom: 0px;
+}
 .slide-list-item {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1442,21 +1455,24 @@ body{font-family: 'Visbycf';}
 }
 
 .tab-link {
-  margin: 10px 0px;
+  margin: 10px 10px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 25%;
   -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
+  flex: 0 0 calc(25% - 20px);
+  max-width: calc(25% - 20px);
   border-radius: 15px;
   background-color: #00e0ff;
+ 
 }
 
 .tab-link.w--current {
-  margin: 10px 0px;
+  margin: 10px 10px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 25%;
   -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
+  flex: 0 0 calc(25% - 20px);
+  max-width: calc(25% - 20px);
 }
 
 .tabs {
@@ -1783,6 +1799,22 @@ body{font-family: 'Visbycf';}
   font-size: 35px;
 }
 
+.dropdown-toggle-menu{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  
+  
+}
+.accordion{ }
+.accordion-item{
+  padding: 50px 0;
+}
+.accordion-header{  padding:0 20px;  border-radius:30px 30px 0 0; background: #f7f8fa;}
+.dropdown-image{flex: 0 0 15%; max-width: 15%;}
+.dropdown-text{ flex: 0 0 60%; max-width: 60%; padding-left: 10px; }
+.dropdown-link{ flex: 0 0 25%; max-width: 25%; text-align: end;}
 .dropdown {
   display: block;
   overflow: hidden;
@@ -1806,6 +1838,7 @@ body{font-family: 'Visbycf';}
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-width: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -2045,7 +2078,7 @@ body{font-family: 'Visbycf';}
   padding-left: 30px;
 }
 
-.dropdown-list {
+.dropdown-list-item-menu {
   position: static;
   left: 0%;
   top: auto;
@@ -2547,7 +2580,10 @@ body{font-family: 'Visbycf';}
     margin-right: auto;
     margin-left: auto;
   }
-
+  .about-content { padding-top: 100px;}
+  .customer-content { padding-top: 0;}
+  .brand-content { padding-top: 0;}
+  .tab-content { padding-top: 0;}
   .tab {
     height: 380px;
   }
@@ -3014,14 +3050,18 @@ body{font-family: 'Visbycf';}
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    width: 100%;
+    max-width: 51%;
+    margin:10px auto;
   }
 
   .tab-link.w--current {
-    margin-top: 0px;
-    margin-bottom: 2px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    width: 100%;
+    max-width: 51%;
+    margin: 10px auto;
   }
 
   .tabs-2 {
