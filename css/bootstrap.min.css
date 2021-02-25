@@ -4338,20 +4338,15 @@ fieldset:disabled .btn {
 }
 
 .accordion-item:first-of-type .accordion-button {
-    border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem
+    
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
-    border-bottom-width: 1px;
-    border-bottom-right-radius: .25rem;
-    border-bottom-left-radius: .25rem
+   
 }
 
 .accordion-item:last-of-type .accordion-collapse {
-    border-bottom-width: 1px;
-    border-bottom-right-radius: .25rem;
-    border-bottom-left-radius: .25rem
+   
 }
 
 .accordion-collapse {
