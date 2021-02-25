@@ -431,9 +431,9 @@ body{font-family: 'Visbycf';}
   -ms-flex-pack: distribute;
   justify-content: space-around;
   opacity: 0;
-  -webkit-transform: translate(5px, -25px);
-  -ms-transform: translate(5px, -25px);
-  transform: translate(5px, -25px);
+  -webkit-transform: translate(5px, -28px);
+  -ms-transform: translate(5px, -28px);
+  transform: translate(5px, -28px);
 }
 
 .main-button.button-slider.slide-1 {
@@ -590,7 +590,7 @@ body{font-family: 'Visbycf';}
 .slide {
   max-width: 100%;
   margin: 10px;
-  margin-top: 25px;
+  margin-top: 44px;
   border: 1px solid #2a406a;
   border-radius: 30px;
   outline: none; 
@@ -635,6 +635,8 @@ body{font-family: 'Visbycf';}
   position: relative; 
   padding-bottom: 70px;
 }
+
+.slide-container:hover .main-button.button-slider { opacity: 100;}
 
 .slide-container.renk {
   background-color: #c28a8a;
