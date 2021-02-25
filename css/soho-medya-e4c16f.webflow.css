@@ -588,11 +588,12 @@ body{font-family: 'Visbycf';}
 
 .slide {
   max-width: 100%;
-  width: 508px;
   margin: 10px;
   margin-top: 25px;
   border: 1px solid #2a406a;
   border-radius: 30px;
+  outline: none; 
+  outline-color: transparent;
 }
 
 .mask {
@@ -620,9 +621,11 @@ body{font-family: 'Visbycf';}
 .slide-container {
   width: 100%;
   height: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 45px;
+  padding-left: 45px;
   border-radius: 20px;
+  position: relative; 
+  padding-bottom: 70px;
 }
 
 .slide-container.renk {
@@ -752,7 +755,7 @@ body{font-family: 'Visbycf';}
   padding-top: 70px;
   padding-bottom: 10px;
   color: #00e0ff;
-  font-size: 35px;
+  font-size: 32px;
 }
 
 .sub-title-slide {
@@ -765,24 +768,11 @@ body{font-family: 'Visbycf';}
 
 .slide-list {
   color: #fff;
-  font-size: 25px;
+  font-size: 22px;
   list-style-type: disc;
+  padding-left: 23px;
 }
 
-.slide-list.height-button {
-  margin-bottom: 50px;
-}
-.slide-list.height-button-lg {
-  margin-bottom: 120px;
-}
-
-.slide-list.height-button-lg-1 {
-  padding-bottom: 48px;
-}
-
-.slide-list.height-button-lg-2 {
-  padding-bottom: 0px;
-}
 .slide-list-item {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -798,6 +788,7 @@ body{font-family: 'Visbycf';}
 .slide-sub-list-text {
   color: #fff;
   font-size: 20px;
+  letter-spacing: -.25px;
 }
 
 .slide-sub-list {
@@ -805,7 +796,7 @@ body{font-family: 'Visbycf';}
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 35px;
+  margin-left: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -831,6 +822,7 @@ body{font-family: 'Visbycf';}
   padding-top: 20px;
   padding-bottom: 20px;
   text-decoration: none;
+  position: absolute; bottom: 0; 
 }
 
 .slide-sub-list-group {
@@ -3667,3 +3659,5 @@ body{font-family: 'Visbycf';}
   .header-animate .anim-content .hac-text .hac-text-content .button-main { display: none;}
 
 }
+
+*{outline: none; outline-color: transparent; }
