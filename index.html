@@ -342,38 +342,40 @@
         <h3 class="content-heading black">MÜŞTERİ GÖRÜŞLERİ</h3>
       </div>
       <h2 class="title-text black title-center customer-title">Mutlu müşteriler <span class="about-text-span-2 black">referansımızdır.</span></h2>
-      <div class="container w-container">
-        <div data-animation="slide" data-duration="500" data-infinite="1" class="customer-slider w-slider">
-          <div class="customer-mask w-slider-mask">
-            <div class="customer-slide w-slide">
-              <div class="customer-container"><img src="images/Mask-Group-4.png" loading="lazy" alt="" class="profile-image">
+      <div class="container customer-section">
+        <div class="customer-slider">
+          <div class="customer-mask">
+            <div class="customer-slide">
+              <div class="customer-container">
+                <div class="img">
+                  <img src="images/Mask-Group-4.png" loading="lazy" alt="" class="profile-image">
+                </div>
                 <h6 class="customer-name">Yusuf KAYA</h6>
                 <h5 class="customer-job">Visual Designer Expert - CCO</h5>
                 <p class="customer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
-            <div class="customer-slide w-slide">
-              <div class="customer-container"><img src="images/Mask-Group-4.png" loading="lazy" alt="" class="profile-image">
+            <div class="customer-slide">
+              <div class="customer-container">
+                <div class="img">
+                  <img src="images/Mask-Group-4.png" loading="lazy" alt="" class="profile-image">
+                </div>
                 <h6 class="customer-name">Yusuf KAYA</h6>
                 <h5 class="customer-job">Visual Designer Expert - CCO</h5>
                 <p class="customer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
-            <div class="customer-slide w-slide">
-              <div class="customer-container"><img src="images/Mask-Group-4.png" loading="lazy" alt="" class="profile-image">
+            <div class="customer-slide">
+              <div class="customer-container">
+                <div class="img">
+                  <img src="images/Mask-Group-4.png" loading="lazy" alt="" class="profile-image">
+                </div>
                 <h6 class="customer-name">Yusuf KAYA</h6>
                 <h5 class="customer-job">Visual Designer Expert - CCO</h5>
                 <p class="customer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
           </div>
-          <div class="w-slider-arrow-left">
-            <div class="icon-2 w-icon-slider-left"></div>
-          </div>
-          <div class="w-slider-arrow-right">
-            <div class="w-icon-slider-right"></div>
-          </div>
-          <div class="w-slider-nav w-round"></div>
         </div>
       </div>
     </div>
@@ -445,19 +447,13 @@
         prevArrow: '<button type="button" class="slick-prev"><svg style="transform:rotate(180deg);" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"><g><g><path fill="currentColor" d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/></g></g></svg></button>',
         responsive: [
           {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 3,
-            }
-          },
-          {
-            breakpoint: 768,
+            breakpoint: 1500,
             settings: {
               slidesToShow: 2,
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 992,
             settings: {
               slidesToShow: 1,
             }
@@ -466,6 +462,16 @@
           // settings: "unslick"
           // instead of a settings object
         ]
+      });
+
+      $('.customer-slider .customer-mask').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true, 
+        nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="8.577" height="13.568" viewBox="0 0 8.577 13.568"><g transform="translate(0 0)"><path fill="currentColor" d="M8.36,7.314,2.322,13.352a.744.744,0,0,1-1.05,0L.217,12.373a.743.743,0,0,1,0-1.05l4.6-4.537L.217,2.2a.744.744,0,0,1,0-1.05L1.267.217a.744.744,0,0,1,1.05,0L8.36,6.26a.749.749,0,0,1,0,1.053Z" fill="#7f8ba0"/></g></svg></button>',
+        prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="8.577" height="13.568" viewBox="0 0 8.577 13.568"><g transform="translate(0 0)"><path fill="currentColor" d="M.216,7.314l6.038,6.038a.744.744,0,0,0,1.05,0l1.055-.978a.743.743,0,0,0,0-1.05l-4.6-4.537L8.36,2.2a.744.744,0,0,0,0-1.05L7.31.217a.744.744,0,0,0-1.05,0L.216,6.26a.749.749,0,0,0,0,1.053Z" transform="translate(0)" fill="#7f8ba0"/></g></svg></button>',
       });
     });
 
